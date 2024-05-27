@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <title>blog sayafasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soolo Studio </h1>
+        <img src="logo.jpg" alt="Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="ana sayfa">Ana Sayfa</a></li>
+            <li><a href="about.html" title="Hakkımızda">Hakkımızda</a></li>
+            <li><a href="products.html"title="Ürünler" >Ürünler</a></li>
+            <li><a href="blog.html" title="Blog" style="color: rgb(219, 235, 115);">Blog</a></li>
+            <li><a href="contact.html" title="İletişim">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Kendi tecrübelerimiz:</h2>
+        <p>2022'den bu yana 70'in üzerinde oyun geliştirdik ve Fiver platformu üzerinde çalışıyoruz.
+            Ve hamsat
+            Google Play'de birçok oyun yayınladık ve yakında Apple Store'da da oyun yayınlama yolculuğumuza çıkacağız.
+        </p>
+        
+        <div class="main-image">
+            <img id="mainImg" src="image/image1.jpg" alt="Main Image">
+        </div>
+        <div class="gallery">
+            <a onclick="changeMainImage('image/image1.jpg')"><img src="image/image1.jpg" alt="Small Image 1"></a>
+            <a onclick="changeMainImage('image/image2.jpg')"><img src="image/image2.jpg" alt="Small Image 2"></a>
+            <a onclick="changeMainImage('image/image3.jpg')"><img src="image/image3.jpg" alt="Small Image 3"></a>
+        </div>
+        
+        <script>
+            function changeMainImage(imageSrc) {
+                document.getElementById('mainImg').src = imageSrc;
+            }
+        </script>
+        
+        <h2>Anket</h2>
+        <form id="survey-form">
+
+            <label>Sitemizi beğendiniz mi?</label><br>
+            <input type="radio"   value="Evet"> Evet<br>
+            <input type="radio"   value="Hayır"> Hayır<br><br>
+            
+            <label >sizce website nasil daha guzel olur?</label><br>
+            <input type="text"><br><br>
+            
+            <label >Sitemizde görmek istediğiniz yeni özellikler nelerdir?</label><br>
+            <textarea  ></textarea><br><br>
+            
+            <input type="submit" value="Gönder">
+        </form>
+        
+    </div>
+    <br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Soolo Studio</p>
+    </footer>
+</body>
+</html>
